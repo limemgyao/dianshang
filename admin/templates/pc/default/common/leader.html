@@ -1,0 +1,66 @@
+{template "header.html"}
+<link rel="stylesheet" href="{THEME_PATH}css/head.css">
+<link rel="stylesheet" href="{THEME_PATH}css/index.css">
+<link rel="stylesheet" href="{THEME_PATH}css/extra.css">
+<link rel="stylesheet" href="{THEME_PATH}css/xh_leader.css">
+<div class="body">
+	  <div class="sanjiliandong">
+        <span>你现在所在的位置 ：</span>
+        <a href="/index.php?c=category&id=39">首页</a> >
+        <span>{$cat["name"]}</span>
+        <span> </span>
+    </div>
+ <div class="container">
+        <div class="fl clearfix fl_box fl_body">
+            <div class="fl_top">
+                <img src="img/pic.jpg" alt="" style="width: 12px;height: 12px;float: left;margin-top: 9px">
+                &nbsp;服务大厅</div>
+            <div class="fl_list">
+                <ul>
+                	{list action=category pid=65}
+                    <li class="clearfix one-txt-cut ">
+                        <a class="fl" href="{$t.url}">{$t.name}</a>
+                    </li>
+                    {/list}
+
+                </ul>
+            </div>
+        </div>
+        <div class="fr clearfix fr_box fr_body">
+            <div class="fr_top_box">
+                <div class="fl_topone">
+                    <img src="{THEME_PATH}img/pic.jpg" alt="" style="">
+                    &nbsp;&nbsp;{$cat['name']}
+                </div>
+                {if $_GET["id"]==66}
+                <div class="fl_list">
+                    <ul>
+                    	{list action=module catid=66 order=name3_asc}
+                    	{if $t.name3==2}
+                    		<li class="one-txt-cut" style="display:inline-block;margin-right: 20px;">
+                    			{if $t.title=='汤帅'}
+                        	<p  style='color: black;font-family: "宋体";margin-bottom:15px;font-size: 16px;font-weight: 800;'>{$t.name2}</p>
+                            {/if}
+                            	{if $t.title!='汤帅'}
+                        	<p  style='color: black;font-family: "宋体";margin-bottom:15px;font-size: 16px;font-weight: 800;'></p>
+                            {/if}
+                            <a href="{$t.url.'&pid=66'}" style="color: #666;font-weight: 100;font-size: 14px;display: block; ">{$t.title}</a>
+                        </li>
+                    	{/if}
+                    	{if $t.name3!=2 }
+                        <li class="one-txt-cut">
+                        	<p  style='color: black;font-family: "宋体";margin-bottom:10px;font-size: 16px;font-weight: 800;'>{$t.name2}</p>
+                            <a href="{$t.url.'&pid=66'}" style="color: #666;font-weight: 100;font-size: 14px;">{$t.title}</a>
+                        </li>
+                        {/if}
+                        
+                        {/list}
+                    </ul>
+                </div>
+            	{/if}
+            </div>
+        </div>
+    </div>
+
+
+{template  "footer.html"}

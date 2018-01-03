@@ -1,0 +1,39 @@
+{template  "header.html"}
+<link rel="stylesheet" href="{THEME_PATH}css/head.css">
+<link rel="stylesheet" href="{THEME_PATH}css/index.css">
+<link rel="stylesheet" href="{THEME_PATH}css/extra.css">
+ <link rel="stylesheet" href="{THEME_PATH}css/ct_content.css">
+
+<div class="body">
+    <!--开头结尾部分-->
+    <div class="sanjiliandong">
+        <span>你现在所在的位置 ：</span>
+        <a href="/index.php?c=category&id=39">首页 </a> > 
+        <span>{$cat['name']}></span>
+        {list action=module catid=$_GET['pid'] }
+            {if $t.id==$_GET["id"]}
+        <span>  {$t.title}</span>
+        {/if}
+        {/list}
+    </div>
+    <!--内容部分-->
+    <div class="container22">
+        <div class="ct_content">
+            <div class="cont_title">
+            	{list action=module catid=$_GET['pid'] }
+            {if $t.id==$_GET["id"]}
+                <div>
+                    {$t.title}
+                </div>
+                <p>来源：{$t.laiyuan}    阅读次数: {$t.hits}  发布时间：{$t.updatetime}</p>
+            </div>
+            <hr>
+            <div class="ct_txt">
+               {$content}
+            </div>
+            {/if}
+            {/list}
+        </div>
+    </div>
+    <!--链接开始-->
+{template "footer.html"}

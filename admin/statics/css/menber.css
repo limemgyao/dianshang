@@ -1,0 +1,61 @@
+.mem_fl_box>.mem_list1>ul>li{
+    width: 50%;
+    float: left;
+    padding: 0px 10px 0px 10px;
+}
+.fl_top{
+    width: 100%;
+    min-height: 30px;
+    height: auto;
+    background: url("../img/ct_pic bg.jpg");
+    line-height: 30px;
+    font-size: 14px;
+    color:#003366;
+    padding:0px 10px 0px 30px;
+}
+.mem_list1{
+    min-height: 170px;
+    height:auto;
+    border: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+.mem_list1 ul{
+    padding:15px;
+}
+.mem_list1 ul li a{
+    color: rgb(0, 51, 102);
+    font-size:14px;
+}
+.mem_fl_box {
+    width: 74%;
+    height:auto;
+    height: auto;
+    overflow: hidden;
+    float: left;
+    box-sizing: border-box;
+}
+.mem_list2{
+
+    margin-top:10px;
+    min-height: 170px;
+    height:auto;
+    border: 1px solid #ccc;
+}
+.mem_list2 a{
+    padding-left: 30px;
+}
+.mem_list2 ul{
+    padding: 15px;
+}
+.mem_list3{
+    margin-top:10px;
+    min-height: 170px;
+    height:auto;
+    border: 1px solid #ccc;
+}
+font{
+	color: #333333 !important;
+}
+.clearfix>a{
+	color: #333333 !important;
+}

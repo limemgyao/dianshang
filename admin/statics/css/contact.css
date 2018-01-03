@@ -1,0 +1,16 @@
+.con_fl_box{
+    width: 74%;
+    min-height: 1036px;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.con_fl_box .con_list ul{
+    padding: 15px;
+    border: 1px solid #ccc;;
+    min-height: 170px;
+    height:auto;
+}
+.con_fl_box .con_list ul>li{
+    margin-top:5px;
+}

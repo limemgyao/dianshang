@@ -1,0 +1,42 @@
+.fl_body{
+    width: 25%!important;
+    min-height: 540px;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #CCC;
+    float: left;
+    box-sizing: border-box;
+}
+.fl_body li{
+    border-bottom: 1px dashed #ccc;
+}
+.fl_body a{
+    font-size:12px!important;
+}
+.fr_body{
+    border: 1px solid #CCC;
+    width: 74%!important;
+    overflow: hidden;
+    float: right;
+    min-height: 458px;
+    height: auto;
+    box-sizing: border-box;
+
+}
+.fr_body ul{
+    border: 0px!important;
+    min-height: 500px!important;
+}
+.fr_body li{
+    margin-top:10px!important;
+}
+.fr_body li a{
+    font-weight: 900;
+    font-size: 16px;
+}
+.fr_body li p{
+    margin-top:5px;
+}
+.fr_body .fl_topone{
+    border: 0;
+}

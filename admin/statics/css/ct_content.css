@@ -1,0 +1,38 @@
+.ct_content{
+    border: 1px solid #ccc;
+    padding: 20px;
+    min-height: 1000px;
+    height: auto;
+}
+.ct_content .cont_title{
+    text-align: center;
+}
+.ct_content .cont_title div{
+    color: #000;
+    font-size: 30px;
+    font-family: "宋体";
+    font-weight: bold;
+}
+.ct_content .cont_title p{
+    color: #000;
+    font-size: 12px;
+    text-align: center;
+    font-family: "宋体";
+}
+.ct_content .ct_txt{
+    padding: 18px;
+}
+.ct_content .ct_txt p{
+    text-indent: 30px;
+    font-size: 16px;
+    margin-top:20px;
+    font-weight: 400;
+    font-family: "宋体";
+    color: black;
+}
+.ct_txt>p>img{
+	margin: 0px auto !important;
+}
+.ct_txt>p>span>img{
+	margin: 0px auto !important;
+}

@@ -1,0 +1,29 @@
+{template "header.html"}
+<link rel="stylesheet" href="{THEME_PATH}css/head.css">
+<link rel="stylesheet" href="{THEME_PATH}css/index.css">
+<link rel="stylesheet" href="{THEME_PATH}css/extra.css">
+ <link rel="stylesheet" href="{THEME_PATH}css/ct_content.css">
+<div class="body">
+    <!--开头结尾部分-->
+    <div class="sanjiliandong">
+        <span>你现在所在的位置 ：</span>
+        <a href="/index.php?c=category&id=39">首页  </a> >
+        {list action=category pid=0 }
+            {if $t.id==$_GET["id"]}
+        		<span>  {$t.title}> </span>
+        	{/if}
+        {/list}
+    </div>
+    <!--内容部分-->
+    <div class="container22">
+        <div class="ct_content">
+            <div class="ct_txt">
+            	 {list action=module catid=61 }
+            		<div style="width: 180px;height: 108px; overflow: hidden; float: left; margin: 50px 30px;"><a href="{$t.dizhi}">
+            			<img src="{dr_get_file($t.thumb)}" alt="" /></a></div>
+            	{/list}	
+            </div>
+        </div>
+    </div>
+
+{template "footer.html"}

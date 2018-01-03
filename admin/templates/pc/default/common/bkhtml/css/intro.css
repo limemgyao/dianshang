@@ -1,0 +1,11 @@
+.xh_txt{
+    padding: 18px;
+    margin-top:20px;
+}
+.xh_txt p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #000000;
+    text-indent: 30px;
+    font-family:"宋体";
+}

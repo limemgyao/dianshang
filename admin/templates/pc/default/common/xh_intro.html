@@ -1,0 +1,47 @@
+{template "header.html"}
+<link rel="stylesheet" href="{THEME_PATH}css/head.css">
+	<link rel="stylesheet" href="{THEME_PATH}css/index.css">
+	     <link rel="stylesheet" href="{THEME_PATH}css/intro.css">
+	      <link rel="stylesheet" href="{THEME_PATH}css/extra.css">
+	       <link rel="stylesheet" href="css/base.css">
+	    <div class="body"> 
+	       <div class="sanjiliandong">   	
+        <span>你现在所在的位置 ：</span>
+        <a href="/index.php?c=category&id=39">首页</a> >
+        <span> {$cat['name']}</span>
+        <span> </span>
+    </div>
+    {if $_GET["id"]==40||$_GET["id"]==67}
+ <div class="container22">
+        <div class="fl clearfix fl_box">
+            <div class="fl_topone">  <img src="{THEME_PATH}img/pic.jpg" alt="" style="width: 12px;height: 12px;float: left;margin-top: 9px">
+                &nbsp;协会简介</div>
+            <div class="xh_txt">
+					{$content}
+            </div>
+        </div>
+        <div class="fr clearfix fr_box">
+            <div>
+                <a href="/index.php?c=category&id=60"><img src="{THEME_PATH}img/lianxiw.jpg" alt="" style="width:280px; height:117px; background: red"></a>
+            </div>
+        </div>
+    </div>
+{/if}
+ {if $_GET["id"]==60||$_GET["id"]==69}
+ <div class="container22">
+ 	
+        <div class="fl clearfix fl_box">
+            <div class="fl_topone">  <img src="{THEME_PATH}img/pic.jpg" alt="" style="width: 12px;height: 12px;float: left;margin-top: 9px">
+                &nbsp;联系我们</div>
+            <div class="xh_txt">
+					{$content}
+            </div>
+        </div>
+        <div class="fr clearfix fr_box">
+            <div>
+                <a href="/index.php?c=category&id=40"><img src="{THEME_PATH}img/xiehuij.jpg" alt="" style="width:280px; height:117px; background: red"></a>
+            </div>
+        </div>
+    </div>
+ {/if}
+   {template "footer.html"}
